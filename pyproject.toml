@@ -1,0 +1,126 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "defenderatlas"
+version = "0.1.0"
+description = "Framework for analyzing Microsoft Defender file scanning behavior"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+authors = [
+    { name = "DefenderAtlas Contributors" },
+]
+keywords = ["defender", "security", "antivirus", "procmon", "etw", "reverse-engineering"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Typing :: Typed",
+]
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.5.0",
+    "black>=24.0.0",
+    "mypy>=1.10.0",
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+    "pre-commit>=3.7.0",
+]
+
+[project.scripts]
+defenderatlas = "defenderatlas.cli.app:app"
+
+[project.urls]
+Homepage = "https://github.com/DefenderAtlas/DefenderAtlas"
+Documentation = "https://github.com/DefenderAtlas/DefenderAtlas#readme"
+Repository = "https://github.com/DefenderAtlas/DefenderAtlas"
+Issues = "https://github.com/DefenderAtlas/DefenderAtlas/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/defenderatlas"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "A",    # flake8-builtins
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+    "TCH",  # flake8-type-checking
+    "RUF",  # ruff-specific rules
+]
+ignore = [
+    "E501", # line too long (handled by black)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["defenderatlas"]
+
+[tool.black]
+target-version = ["py312"]
+line-length = 88
+src = ["src", "tests"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "-v",
+    "--tb=short",
+    "--cov=defenderatlas",
+    "--cov-report=term-missing",
+]
+
+[tool.coverage.run]
+source = ["defenderatlas"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if TYPE_CHECKING:",
+    "if __name__ == .__main__.",
+    "raise NotImplementedError",
+]

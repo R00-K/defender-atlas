@@ -1,0 +1,68 @@
+You are a Senior Python Software Engineer.
+
+We are building an open-source research framework called DefenderAtlas.
+
+Purpose:
+DefenderAtlas is a framework for analyzing Microsoft Defender's file scanning behavior using ProcMon, ETW, reverse engineering, and file format analysis.
+
+This is a long-term research project, not a simple Python script.
+
+Your task is ONLY to initialize the project.
+
+Requirements
+
+• Python 3.12+
+• src layout
+• pyproject.toml
+• Package name: defenderatlas
+• Typer CLI
+• Rich
+• Pydantic v2
+• Ruff
+• Black
+• mypy
+• pytest
+• pre-commit
+• GitHub Actions (lint + tests)
+
+Create the following structure:
+
+DefenderAtlas/
+│
+├── src/
+│   └── defenderatlas/
+│       ├── analyzers/
+│       ├── capture/
+│       ├── cli/
+│       ├── detectors/
+│       ├── mapping/
+│       ├── models/
+│       ├── parsers/
+│       ├── reports/
+│       ├── reverse/
+│       ├── statistics/
+│       ├── utils/
+│       ├── visualization/
+│       └── __init__.py
+│
+├── tests/
+├── docs/
+├── datasets/
+├── reports/
+├── .github/
+│   └── workflows/
+├── pyproject.toml
+├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── .gitignore
+
+The project must install with
+
+pip install -e .
+
+Do NOT implement any functionality.
+
+Only initialize the project.
+
+Explain every design decision.

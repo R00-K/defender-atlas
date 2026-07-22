@@ -1,0 +1,29 @@
+Implement the DefenderAtlas CLI.
+
+Use Typer and Rich.
+
+Commands
+
+defenderatlas analyze
+
+defenderatlas capture
+
+defenderatlas visualize
+
+defenderatlas report
+
+defenderatlas version
+
+Requirements
+
+• Beautiful help
+• Colored output
+• Logging
+• Error handling
+• Placeholder services
+
+Do NOT implement command logic.
+
+Only build the CLI.
+
+Write unit tests.

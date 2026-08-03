@@ -1,0 +1,63 @@
+﻿{
+    "dataset":  {
+                    "created_on":  "2026-07-27T02:57:48Z",
+                    "source_file":  "arrays_large.cpp",
+                    "generated":  true,
+                    "created_by":  "DefenderAtlas Dataset Generator"
+                },
+    "sample_id":  "unsigned_arrays_001",
+    "research":  {
+                     "rule_matches":  [
+
+                                      ],
+                     "analysis_report":  null,
+                     "confidence":  null,
+                     "phase_detection":  null,
+                     "findings":  [
+
+                                  ],
+                     "procmon_trace":  null,
+                     "notes":  "",
+                     "timeline":  null
+                 },
+    "type":  "native_pe",
+    "display_name":  "Large global arrays",
+    "category":  "unsigned",
+    "sub_category":  "arrays",
+    "binary":  {
+                   "sha256":  "ea5b6dec2fdbec31ab3428b7f80fe73fce1fad16708d51d73defd9c68d3ed5d0",
+                   "compile_timestamp":  "2026-07-27T02:57:48Z",
+                   "pe_timestamp":  "",
+                   "architecture":  "x64",
+                   "size_bytes":  88020,
+                   "filename":  "arrays_large.exe",
+                   "md5":  "2f9405bea3980cda74a28b4230512ec2"
+               },
+    "signed":  false,
+    "compiler":  {
+                     "flags":  "-O0 -static",
+                     "language":  "C++",
+                     "name":  "MinGW GCC",
+                     "version":  "g++.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 15.2.0"
+                 },
+    "pe_features":  {
+                        "overlay":  false,
+                        "sections":  [
+                                         ".text",
+                                         ".data",
+                                         ".bss",
+                                         ".rdata",
+                                         ".rsrc"
+                                     ],
+                        "resources":  true,
+                        "certificate":  false,
+                        "exports":  [
+
+                                    ],
+                        "imports":  [
+                                        "kernel32.dll",
+                                        "msvcrt.dll"
+                                    ],
+                        "dotnet":  false
+                    }
+}

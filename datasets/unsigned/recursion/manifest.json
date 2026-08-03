@@ -1,0 +1,63 @@
+﻿{
+    "dataset":  {
+                    "created_on":  "2026-07-27T02:57:48Z",
+                    "source_file":  "recursion_algo.cpp",
+                    "generated":  true,
+                    "created_by":  "DefenderAtlas Dataset Generator"
+                },
+    "sample_id":  "unsigned_recursion_001",
+    "research":  {
+                     "rule_matches":  [
+
+                                      ],
+                     "analysis_report":  null,
+                     "confidence":  null,
+                     "phase_detection":  null,
+                     "findings":  [
+
+                                  ],
+                     "procmon_trace":  null,
+                     "notes":  "",
+                     "timeline":  null
+                 },
+    "type":  "native_pe",
+    "display_name":  "Recursive algorithms (quicksort, merge sort, ackermann)",
+    "category":  "unsigned",
+    "sub_category":  "recursion",
+    "binary":  {
+                   "sha256":  "4d6516229ca1981918bc8d663b206080616b616de11c8831807252e6f96dd068",
+                   "compile_timestamp":  "2026-07-27T02:57:48Z",
+                   "pe_timestamp":  "",
+                   "architecture":  "x64",
+                   "size_bytes":  89032,
+                   "filename":  "recursion_algo.exe",
+                   "md5":  "f3c525cc06c8c81fa6ccaf4074710e41"
+               },
+    "signed":  false,
+    "compiler":  {
+                     "flags":  "-O0 -static",
+                     "language":  "C++",
+                     "name":  "MinGW GCC",
+                     "version":  "g++.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 15.2.0"
+                 },
+    "pe_features":  {
+                        "overlay":  false,
+                        "sections":  [
+                                         ".text",
+                                         ".data",
+                                         ".bss",
+                                         ".rdata",
+                                         ".rsrc"
+                                     ],
+                        "resources":  true,
+                        "certificate":  false,
+                        "exports":  [
+
+                                    ],
+                        "imports":  [
+                                        "kernel32.dll",
+                                        "msvcrt.dll"
+                                    ],
+                        "dotnet":  false
+                    }
+}

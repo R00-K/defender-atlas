@@ -1,0 +1,63 @@
+﻿{
+    "dataset":  {
+                    "created_on":  "2026-07-27T02:57:48Z",
+                    "source_file":  "network_imports.cpp",
+                    "generated":  true,
+                    "created_by":  "DefenderAtlas Dataset Generator"
+                },
+    "sample_id":  "unsigned_network_001",
+    "research":  {
+                     "rule_matches":  [
+
+                                      ],
+                     "analysis_report":  null,
+                     "confidence":  null,
+                     "phase_detection":  null,
+                     "findings":  [
+
+                                  ],
+                     "procmon_trace":  null,
+                     "notes":  "",
+                     "timeline":  null
+                 },
+    "type":  "native_pe",
+    "display_name":  "Network API imports (no networking)",
+    "category":  "unsigned",
+    "sub_category":  "network",
+    "binary":  {
+                   "sha256":  "71e7e9b789a59678993fd8b0c809181ce7375aa75b1ce0418bad6c8af70b7204",
+                   "compile_timestamp":  "2026-07-27T02:57:48Z",
+                   "pe_timestamp":  "",
+                   "architecture":  "x64",
+                   "size_bytes":  88701,
+                   "filename":  "network_imports.exe",
+                   "md5":  "79a9d1897ff248477e65f59021d64a67"
+               },
+    "signed":  false,
+    "compiler":  {
+                     "flags":  "-O0 -static -lws2_32 -liphlpapi -lwinhttp",
+                     "language":  "C++",
+                     "name":  "MinGW GCC",
+                     "version":  "g++.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 15.2.0"
+                 },
+    "pe_features":  {
+                        "overlay":  false,
+                        "sections":  [
+                                         ".text",
+                                         ".data",
+                                         ".bss",
+                                         ".rdata",
+                                         ".rsrc"
+                                     ],
+                        "resources":  true,
+                        "certificate":  false,
+                        "exports":  [
+
+                                    ],
+                        "imports":  [
+                                        "kernel32.dll",
+                                        "msvcrt.dll"
+                                    ],
+                        "dotnet":  false
+                    }
+}

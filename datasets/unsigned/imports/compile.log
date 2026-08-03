@@ -1,0 +1,41 @@
+﻿g++.exe : In file included from \\VBoxSvr\000\DefenderAtlas\datasets\unsigned\imports\imports_many.cpp:5:
+At line:35 char:12
++     $out = & $gpp $c.Flags.Split(' ') -o $exeFile $srcFile 2>&1 | Out ...
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...rts_many.cpp:5::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:/ProgramData/mingw64/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h 
+before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x2c1): undefined reference to `GetAdaptersInfo'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x2ec): undefined reference to `__imp_GetDeviceCaps'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x30a): undefined reference to `__imp_GetDeviceCaps'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x35e): undefined reference to `__imp_WSAStartup'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x376): undefined reference to `__imp_gethostname'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x3e5): undefined reference to `__imp_getaddrinfo'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x404): undefined reference to `__imp_freeaddrinfo'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x40d): undefined reference to `__imp_WSACleanup'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x512): undefined reference to 
+`__imp_CertOpenSystemStoreA'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x55b): undefined reference to 
+`__imp_CertEnumCertificatesInStore'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x59e): undefined reference to 
+`__imp_CertCloseStore'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccL4Swzp.o:imports_many.c:(.text+0x5a7): undefined reference to 
+`__imp_waveOutGetNumDevs'
+collect2.exe: error: ld returned 1 exit status
+

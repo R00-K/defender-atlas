@@ -1,0 +1,162 @@
+﻿{
+    "sub_category":  "small",
+    "category":  "signed",
+    "samples":  [
+                    {
+                        "size_bytes":  200704,
+                        "sample_id":  "signed_small_008",
+                        "filename":  "notepad.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\notepad.exe",
+                        "sha256":  "da5807bb0997cc6b5132950ec87eda2b33b1ac4533cf1f7a22a6f3b576ed7c5b",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "6f51bcabf1b2b34ad7e670aee6da451f",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  106496,
+                        "sample_id":  "signed_small_009",
+                        "filename":  "tasklist.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\tasklist.exe",
+                        "sha256":  "be7241a74fe9a9d30e0631e41533a362b21c8f7aae3e5b6ad319cc15c024ec3f",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "d0a49a170e13d7f6aebbefed9df88aaa",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  59904,
+                        "sample_id":  "signed_small_010",
+                        "filename":  "net.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\net.exe",
+                        "sha256":  "9f376759bcbcd705f726460fc4a7e2b07f310f52baa73caaaaa124fddbdf993e",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "0bd94a338eea5a4e1f2830ae326e6d19",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  101376,
+                        "sample_id":  "signed_small_011",
+                        "filename":  "taskkill.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\taskkill.exe",
+                        "sha256":  "56f8cc2c1790c389394733b84c3fb55e10977e9f0fe0c08110ac11f0fe47f05e",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "a599d3b2fafbde4c1a6d7d0f839451c7",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  102864,
+                        "sample_id":  "signed_small_012",
+                        "filename":  "RuntimeBroker.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.5794 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\RuntimeBroker.exe",
+                        "sha256":  "ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "51e04ae0701a1d33fdd89b96d7ce12a4",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  289792,
+                        "sample_id":  "signed_small_013",
+                        "filename":  "cmd.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\cmd.exe",
+                        "sha256":  "badf4752413cb0cbdc03fb95820ca167f0cdc63b597ccdb5ef43111180e088b0",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "2b40c98ed0f7a1d3b091a3e8353132dc",
+                        "product":  "Microsoft® Windows® Operating System"
+                    }
+                ]
+}

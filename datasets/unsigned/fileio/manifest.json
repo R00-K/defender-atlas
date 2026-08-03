@@ -1,0 +1,63 @@
+﻿{
+    "dataset":  {
+                    "created_on":  "2026-07-27T02:57:48Z",
+                    "source_file":  "fileio_basic.cpp",
+                    "generated":  true,
+                    "created_by":  "DefenderAtlas Dataset Generator"
+                },
+    "sample_id":  "unsigned_fileio_001",
+    "research":  {
+                     "rule_matches":  [
+
+                                      ],
+                     "analysis_report":  null,
+                     "confidence":  null,
+                     "phase_detection":  null,
+                     "findings":  [
+
+                                  ],
+                     "procmon_trace":  null,
+                     "notes":  "",
+                     "timeline":  null
+                 },
+    "type":  "native_pe",
+    "display_name":  "Basic file I/O operations",
+    "category":  "unsigned",
+    "sub_category":  "fileio",
+    "binary":  {
+                   "sha256":  "5c7392544eda42b19835f30828978376583ca954ef8b58d3f6f5f2fed1163bb3",
+                   "compile_timestamp":  "2026-07-27T02:57:48Z",
+                   "pe_timestamp":  "",
+                   "architecture":  "x64",
+                   "size_bytes":  61084,
+                   "filename":  "fileio_basic.exe",
+                   "md5":  "29aaeb23a761c63ee2af6e1097f7b505"
+               },
+    "signed":  false,
+    "compiler":  {
+                     "flags":  "-O0 -static",
+                     "language":  "C++",
+                     "name":  "MinGW GCC",
+                     "version":  "g++.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 15.2.0"
+                 },
+    "pe_features":  {
+                        "overlay":  false,
+                        "sections":  [
+                                         ".text",
+                                         ".data",
+                                         ".bss",
+                                         ".rdata",
+                                         ".rsrc"
+                                     ],
+                        "resources":  true,
+                        "certificate":  false,
+                        "exports":  [
+
+                                    ],
+                        "imports":  [
+                                        "kernel32.dll",
+                                        "msvcrt.dll"
+                                    ],
+                        "dotnet":  false
+                    }
+}

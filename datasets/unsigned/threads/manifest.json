@@ -1,0 +1,63 @@
+﻿{
+    "dataset":  {
+                    "created_on":  "2026-07-27T02:57:48Z",
+                    "source_file":  "threads_create.cpp",
+                    "generated":  true,
+                    "created_by":  "DefenderAtlas Dataset Generator"
+                },
+    "sample_id":  "unsigned_threads_001",
+    "research":  {
+                     "rule_matches":  [
+
+                                      ],
+                     "analysis_report":  null,
+                     "confidence":  null,
+                     "phase_detection":  null,
+                     "findings":  [
+
+                                  ],
+                     "procmon_trace":  null,
+                     "notes":  "",
+                     "timeline":  null
+                 },
+    "type":  "native_pe",
+    "display_name":  "Thread creation with synchronization",
+    "category":  "unsigned",
+    "sub_category":  "threads",
+    "binary":  {
+                   "sha256":  "b79584fe57ec2bbcec6cc75614738f844971734811f08bf52270f1a03f4044e2",
+                   "compile_timestamp":  "2026-07-27T02:57:48Z",
+                   "pe_timestamp":  "",
+                   "architecture":  "x64",
+                   "size_bytes":  86894,
+                   "filename":  "threads_create.exe",
+                   "md5":  "4cc0a8c619d1e5ae2d25081019ced8d0"
+               },
+    "signed":  false,
+    "compiler":  {
+                     "flags":  "-O0 -static",
+                     "language":  "C++",
+                     "name":  "MinGW GCC",
+                     "version":  "g++.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 15.2.0"
+                 },
+    "pe_features":  {
+                        "overlay":  false,
+                        "sections":  [
+                                         ".text",
+                                         ".data",
+                                         ".bss",
+                                         ".rdata",
+                                         ".rsrc"
+                                     ],
+                        "resources":  true,
+                        "certificate":  false,
+                        "exports":  [
+
+                                    ],
+                        "imports":  [
+                                        "kernel32.dll",
+                                        "msvcrt.dll"
+                                    ],
+                        "dotnet":  false
+                    }
+}

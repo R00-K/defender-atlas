@@ -1,0 +1,43 @@
+﻿g++.exe : \\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp: In function 'double 
+compute_operation(int, double, double)':
+At line:35 char:12
++     $out = & $gpp $c.Flags.Split(' ') -o $exeFile $srcFile 2>&1 | Out ...
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (\\VBoxSvr\000\D...uble, double)'::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:103:33: error: 'fmod' was not declared in 
+this scope
+  103 |         case 4: return b != 0 ? fmod(a, b) : 0;
+      |                                 ^~~~
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:104:24: error: 'pow' was not declared in 
+this scope
+  104 |         case 5: return pow(a, b);
+      |                        ^~~
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:105:24: error: 'fmax' was not declared in 
+this scope
+  105 |         case 6: return fmax(a, b);
+      |                        ^~~~
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:106:24: error: 'fmin' was not declared in 
+this scope
+  106 |         case 7: return fmin(a, b);
+      |                        ^~~~
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:107:24: error: 'fabs' was not declared in 
+this scope; did you mean 'labs'?
+  107 |         case 8: return fabs(a - b);
+      |                        ^~~~
+      |                        labs
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:108:24: error: 'sqrt' was not declared in 
+this scope
+  108 |         case 9: return sqrt(a * a + b * b);
+      |                        ^~~~
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:109:25: error: 'atan2' was not declared in 
+this scope
+  109 |         case 10: return atan2(a, b);
+      |                         ^~~~~
+\\VBoxSvr\000\DefenderAtlas\datasets\unsigned\switches\switches_large.cpp:110:25: error: 'log' was not declared in 
+this scope; did you mean 'long'?
+  110 |         case 11: return log(a > 0 ? a : 1) - log(b > 0 ? b : 1);
+      |                         ^~~
+      |                         long
+

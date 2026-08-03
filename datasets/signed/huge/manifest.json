@@ -1,0 +1,58 @@
+﻿{
+    "sub_category":  "huge",
+    "category":  "signed",
+    "samples":  [
+                    {
+                        "size_bytes":  10859424,
+                        "sample_id":  "signed_huge_021",
+                        "filename":  "ntoskrnl.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.6456 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\ntoskrnl.exe",
+                        "sha256":  "563f486f45853248e54b3ee800d6b19289101c6cca15e0e3fa11a70452b5ce91",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "124a75e2d0291a533a5ae197e165adc2",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  30870320,
+                        "sample_id":  "signed_huge_022",
+                        "filename":  "OneDriveSetup.exe",
+                        "signature_status":  "Valid",
+                        "version":  "19.043.0304.0013",
+                        "original_path":  "C:\\Windows\\SysWOW64\\OneDriveSetup.exe",
+                        "sha256":  "94273ec2daed031adb6a954e5e49b29e61042d26bfbe074af534ea743f54460c",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "0ea845f896c821e04009c0336d7547ec",
+                        "product":  "Microsoft OneDrive"
+                    }
+                ]
+}

@@ -1,0 +1,17 @@
+{
+    "procmon_path": "C:\\Tools\\Procmon64.exe",
+    "dataset_root": "..\\datasets",
+    "experiment_root": "..\\experiments",
+    "working_directory": "C:\\Users\\cruiz\\Downloads",
+    "trigger_timeout_ms": 8000,
+    "trigger_worker_timeout_ms": 30000,
+    "completion_strategy": "timeout",
+    "procmon_filter_profile": "minimal",
+    "analyzer_path": "defenderatlas_analyzer.exe",
+    "analyzer_timeout_ms": 60000,
+    "source_url": "https://example.com/download",
+    "trigger_worker_path": "trigger_worker.exe",
+    "procmon_ready_timeout_ms": 15000,
+    "procmon_stop_timeout_ms": 15000,
+    "procmon_export_timeout_ms": 120000
+}

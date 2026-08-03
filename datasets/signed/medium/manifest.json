@@ -1,0 +1,84 @@
+﻿{
+    "sub_category":  "medium",
+    "category":  "signed",
+    "samples":  [
+                    {
+                        "size_bytes":  938496,
+                        "sample_id":  "signed_medium_014",
+                        "filename":  "mspaint.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.4597 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\mspaint.exe",
+                        "sha256":  "94f22ae686874a5f016aacf7f74f679decc8d52a39dfdf31dcd5133739bba532",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "fa534c7c1f54f9fb8ba99fc99c505651",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  534016,
+                        "sample_id":  "signed_medium_015",
+                        "filename":  "Narrator.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\Narrator.exe",
+                        "sha256":  "9e59eeeeb81f0fd09743c6f18b7884c6036de10940dc212c548725b6f6aacd7f",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "9a41e0998f285855159c69769cebdf8e",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  522192,
+                        "sample_id":  "signed_medium_016",
+                        "filename":  "systemreset.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\systemreset.exe",
+                        "sha256":  "fcbe89c12b5371f12f75fcda7dbafe393e57166c228e0bacd7cda6f7ba8a30d4",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "87a59182452c511f122e933565d54586",
+                        "product":  "Microsoft® Windows® Operating System"
+                    }
+                ]
+}

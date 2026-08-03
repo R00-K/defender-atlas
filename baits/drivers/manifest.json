@@ -1,0 +1,395 @@
+﻿{
+    "category":  "driver",
+    "samples":  [
+                    {
+                        "size_bytes":  101856,
+                        "sample_id":  "driver_001",
+                        "filename":  "disk.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\disk.sys",
+                        "sha256":  "1029ebc39859fe68459214b2e35c970b92e7eb367e46fb536f46f26b2a5c8f8b",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "6789045258b58c4c2740a05de81f19ed",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  71480,
+                        "sample_id":  "driver_002",
+                        "filename":  "kbdclass.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\kbdclass.sys",
+                        "sha256":  "7639dcd4328c14f3fb522ec501f4df374ccbe87699eb4a2b238c9f9c526fdf59",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "02a6967d5aef2f15aa9c838dbf3e1c04",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  67600,
+                        "sample_id":  "driver_003",
+                        "filename":  "mouclass.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\mouclass.sys",
+                        "sha256":  "db5d99dbff8c84a7d87109dfb71396df8e0f0754fc0d263e45116915a39735ce",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "4352c109dd892a5a5413897a74103024",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  812416,
+                        "sample_id":  "driver_004",
+                        "filename":  "acpi.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\acpi.sys",
+                        "sha256":  "d59f30a362fc637719c52836792381ee8cb8846c112bc847c5cf7b3e5e4f23ee",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "bffaa21ed555c51b660a3d0b96fcedbc",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  1481600,
+                        "sample_id":  "driver_005",
+                        "filename":  "ndis.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\ndis.sys",
+                        "sha256":  "4f5b3d86b4b644ce5ce37732db5d057d60dbc0517545edae6746a1c6145ece0d",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "79fd5091018177ba0ade342a18df77fe",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  2993536,
+                        "sample_id":  "driver_006",
+                        "filename":  "tcpip.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.6456 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\tcpip.sys",
+                        "sha256":  "58033b62f5e6279437cf59bd6587b9cc5edaa6ae3bdc7d0e7436fe7f5cd254e7",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "f041baaf75aae07d3f96385dd209dd37",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  2846592,
+                        "sample_id":  "driver_007",
+                        "filename":  "ntfs.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.5607 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\ntfs.sys",
+                        "sha256":  "4df3be53bc3048aed67dacfc3ea1be61c3d8fe2755669710c8ce604ce39884f1",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "4523af0cd38f868971651691dbd3853d",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  3818368,
+                        "sample_id":  "driver_008",
+                        "filename":  "dxgkrnl.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.6456 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\dxgkrnl.sys",
+                        "sha256":  "92fdbe53155635f0b9e3d507358880b33310be56c8d7564fa3fcbf90b2e40811",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "9416d5f39cdc6708bf9bed5ad63a0c07",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  429968,
+                        "sample_id":  "driver_009",
+                        "filename":  "fltmgr.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\fltmgr.sys",
+                        "sha256":  "8de55c0b310894cd0086fe1f999c3e5b18b5d1473747b4a61db943bf4660dd94",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "cd2ab114b91e7abf8bf529505bc5be30",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  350136,
+                        "sample_id":  "driver_010",
+                        "filename":  "WdFilter.sys",
+                        "signature_status":  "Valid",
+                        "version":  "4.18.1909.6 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\WdFilter.sys",
+                        "sha256":  "0f4d31410401cc564a5d1fcef5ed2898dafb7418c1b39d746e88451cc3518aca",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "c150cd7072592b0bcbb7dacffc6904cd",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  46688,
+                        "sample_id":  "driver_011",
+                        "filename":  "WdBoot.sys",
+                        "signature_status":  "Valid",
+                        "version":  "4.18.1909.6 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\WdBoot.sys",
+                        "sha256":  "0845344f7bfaa94af90920a5346078e6261eea3a1a77795dda5b70b38609348b",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "5925250bddb94b0a5fa0e7feed36c520",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  54200,
+                        "sample_id":  "driver_012",
+                        "filename":  "WdNisDrv.sys",
+                        "signature_status":  "Valid",
+                        "version":  "4.18.1909.6 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\WdNisDrv.sys",
+                        "sha256":  "67838896b7e04ebbe2aa089f09913789a5e8c4b7e7436397135f1f68bb86f03a",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "c5552a3a54408ab9a0dc341e21f5ef67",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  94736,
+                        "sample_id":  "driver_013",
+                        "filename":  "fileinfo.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\fileinfo.sys",
+                        "sha256":  "832bf32b9efa04fbdd9638d00b209dfc88c4c69e0aec7ff1b5ad4ddec0f20878",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "ee7605e60374cbd2ddaaa120fa2e458a",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  747552,
+                        "sample_id":  "driver_014",
+                        "filename":  "cng.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.5915 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\cng.sys",
+                        "sha256":  "1191e1cabfceb601f1c71d67f00c8194c718136f121e1c7efebe882b4a4b5887",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "46dc985a1c6b6ea96de6be63667a613f",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  726416,
+                        "sample_id":  "driver_015",
+                        "filename":  "storport.sys",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.6456 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\drivers\\storport.sys",
+                        "sha256":  "8615e657d973311d7cf77996b80dc17d0cedce031afe1d2350f5214871b28b72",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "ceab334bbd998a3e84e7630893b387a8",
+                        "product":  "Microsoft® Windows® Operating System"
+                    }
+                ]
+}

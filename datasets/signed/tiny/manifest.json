@@ -1,0 +1,188 @@
+﻿{
+    "sub_category":  "tiny",
+    "category":  "signed",
+    "samples":  [
+                    {
+                        "size_bytes":  27648,
+                        "sample_id":  "signed_tiny_001",
+                        "filename":  "calc.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\calc.exe",
+                        "sha256":  "58189cbd4e6dc0c7d8e66b6a6f75652fc9f4afc7ce0eba7d67d8c3feb0d5381f",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "5da8c98136d98dfec4716edd79c7145f",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  22528,
+                        "sample_id":  "signed_tiny_002",
+                        "filename":  "ping.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\ping.exe",
+                        "sha256":  "7af50fa112932ea3284f7821b2eea2b7582f558dba897231bb82182003c29f8b",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "2f46799d79d22ac72c241ec0322b011d",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  35840,
+                        "sample_id":  "signed_tiny_003",
+                        "filename":  "ipconfig.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\ipconfig.exe",
+                        "sha256":  "53e000f5aa9b3a00934319db8080bb99cb323bf48fc628a64f75d7847c265606",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "62f170fb07fdbb79ceb7147101406eb8",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  17920,
+                        "sample_id":  "signed_tiny_004",
+                        "filename":  "find.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\find.exe",
+                        "sha256":  "da020fbf74e1a08a5c21955a09b28ec62a6d160af648f6903ada401725a652b0",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "4022d9d40ae3a7f27cc79988989a8853",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  26112,
+                        "sample_id":  "signed_tiny_005",
+                        "filename":  "fc.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\fc.exe",
+                        "sha256":  "c5b2fff1230c5cb4b7e62df2abdf65df25822e70d68d27a9a390016a3c3d5c04",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "1c20087f983d01465fea3a33eab19370",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  73728,
+                        "sample_id":  "signed_tiny_006",
+                        "filename":  "whoami.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\whoami.exe",
+                        "sha256":  "1d4902a04d99e8ccbfe7085e63155955fee397449d386453f6c452ae407b8743",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "a4a6924f3eaf97981323703d38fd99c4",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  9216,
+                        "sample_id":  "signed_tiny_007",
+                        "filename":  "wscadminui.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.5737 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\wscadminui.exe",
+                        "sha256":  "270d3dfcddc982d7d0a2e1c760cf59d6e44c0815e4207fa80a419c1b10cd3029",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "b95f9c8ea5b811e10d4f806ae95f736f",
+                        "product":  "Microsoft® Windows® Operating System"
+                    }
+                ]
+}

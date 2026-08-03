@@ -1,0 +1,518 @@
+﻿{
+    "samples":  [
+                    {
+                        "manifest":  "datasets/unsigned/hello/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "hello",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_hello_001",
+                        "path":  "datasets/unsigned/hello/hello_tiny.exe",
+                        "size_bytes":  83258,
+                        "sha256":  "f6f796c4b0dc40f28461d42ad47825c317b36f5644d35d1dbbbd1f8918a2ae42"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/hello/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "hello",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_hello_002",
+                        "path":  "datasets/unsigned/hello/hello_small.exe",
+                        "size_bytes":  84502,
+                        "sha256":  "757303196201c9688f034eb74af3dde9a92923385825d4702c0f3b8a63f628f3"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/hello/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "hello",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_hello_003",
+                        "path":  "datasets/unsigned/hello/hello_medium.exe",
+                        "size_bytes":  87287,
+                        "sha256":  "c7bd725dd42c326a86efd2800551d58a3835a949f9637815f8c2fe01fb8bd316"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/hello/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "hello",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_hello_004",
+                        "path":  "datasets/unsigned/hello/hello_large.exe",
+                        "size_bytes":  89711,
+                        "sha256":  "9531c3c65bb5c5cd16427b7971933850a7c81a463a7ed9baf29a5dc0c0c85dfc"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/hello/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "hello",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_hello_005",
+                        "path":  "datasets/unsigned/hello/hello_huge.exe",
+                        "size_bytes":  92469,
+                        "sha256":  "e8a69a5772b2de66d142da920e93249caf099615a53efd95f51ecb061f928a5b"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/imports/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "imports",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_imports_001",
+                        "path":  "datasets/unsigned/imports/imports_many.exe",
+                        "size_bytes":  96605,
+                        "sha256":  "1c586bb355681d67f0f4bcac8aa8ceaf15e1c58492212e85454cecd3bd5cbda2"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/arrays/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "arrays",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_arrays_001",
+                        "path":  "datasets/unsigned/arrays/arrays_large.exe",
+                        "size_bytes":  88020,
+                        "sha256":  "ea5b6dec2fdbec31ab3428b7f80fe73fce1fad16708d51d73defd9c68d3ed5d0"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/data/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "data",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_data_001",
+                        "path":  "datasets/unsigned/data/data_embedded.exe",
+                        "size_bytes":  88088,
+                        "sha256":  "ee764ed810590d8c5a900b2ddd88261563ece7408cbbc589869936b484651226"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/functions/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "functions",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_functions_001",
+                        "path":  "datasets/unsigned/functions/functions_many.exe",
+                        "size_bytes":  98330,
+                        "sha256":  "a44d4e96becbdad01866bd08d7c9636eda7cfe425b48eb90a4f5419815ffad79"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/switches/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "switches",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_switches_001",
+                        "path":  "datasets/unsigned/switches/switches_large.exe",
+                        "size_bytes":  90594,
+                        "sha256":  "30fa9ee7cf9509c94bd000f257a0bc2cf5d358955254f49f755da75cd85d0a6f"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/recursion/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "recursion",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_recursion_001",
+                        "path":  "datasets/unsigned/recursion/recursion_algo.exe",
+                        "size_bytes":  89032,
+                        "sha256":  "4d6516229ca1981918bc8d663b206080616b616de11c8831807252e6f96dd068"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/fileio/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "fileio",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_fileio_001",
+                        "path":  "datasets/unsigned/fileio/fileio_basic.exe",
+                        "size_bytes":  61084,
+                        "sha256":  "5c7392544eda42b19835f30828978376583ca954ef8b58d3f6f5f2fed1163bb3"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/network/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "network",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_network_001",
+                        "path":  "datasets/unsigned/network/network_imports.exe",
+                        "size_bytes":  88701,
+                        "sha256":  "71e7e9b789a59678993fd8b0c809181ce7375aa75b1ce0418bad6c8af70b7204"
+                    },
+                    {
+                        "manifest":  "datasets/unsigned/threads/manifest.json",
+                        "signed":  false,
+                        "sub_category":  "threads",
+                        "category":  "unsigned",
+                        "sample_id":  "unsigned_threads_001",
+                        "path":  "datasets/unsigned/threads/threads_create.exe",
+                        "size_bytes":  86894,
+                        "sha256":  "b79584fe57ec2bbcec6cc75614738f844971734811f08bf52270f1a03f4044e2"
+                    },
+                    {
+                        "manifest":  "datasets/signed/tiny/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "tiny",
+                        "category":  "signed",
+                        "sample_id":  "signed_tiny_001",
+                        "path":  "datasets/signed/tiny/calc.exe",
+                        "size_bytes":  27648,
+                        "sha256":  "58189cbd4e6dc0c7d8e66b6a6f75652fc9f4afc7ce0eba7d67d8c3feb0d5381f"
+                    },
+                    {
+                        "manifest":  "datasets/signed/tiny/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "tiny",
+                        "category":  "signed",
+                        "sample_id":  "signed_tiny_002",
+                        "path":  "datasets/signed/tiny/ping.exe",
+                        "size_bytes":  22528,
+                        "sha256":  "7af50fa112932ea3284f7821b2eea2b7582f558dba897231bb82182003c29f8b"
+                    },
+                    {
+                        "manifest":  "datasets/signed/tiny/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "tiny",
+                        "category":  "signed",
+                        "sample_id":  "signed_tiny_003",
+                        "path":  "datasets/signed/tiny/ipconfig.exe",
+                        "size_bytes":  35840,
+                        "sha256":  "53e000f5aa9b3a00934319db8080bb99cb323bf48fc628a64f75d7847c265606"
+                    },
+                    {
+                        "manifest":  "datasets/signed/tiny/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "tiny",
+                        "category":  "signed",
+                        "sample_id":  "signed_tiny_004",
+                        "path":  "datasets/signed/tiny/find.exe",
+                        "size_bytes":  17920,
+                        "sha256":  "da020fbf74e1a08a5c21955a09b28ec62a6d160af648f6903ada401725a652b0"
+                    },
+                    {
+                        "manifest":  "datasets/signed/tiny/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "tiny",
+                        "category":  "signed",
+                        "sample_id":  "signed_tiny_005",
+                        "path":  "datasets/signed/tiny/fc.exe",
+                        "size_bytes":  26112,
+                        "sha256":  "c5b2fff1230c5cb4b7e62df2abdf65df25822e70d68d27a9a390016a3c3d5c04"
+                    },
+                    {
+                        "manifest":  "datasets/signed/tiny/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "tiny",
+                        "category":  "signed",
+                        "sample_id":  "signed_tiny_006",
+                        "path":  "datasets/signed/tiny/whoami.exe",
+                        "size_bytes":  73728,
+                        "sha256":  "1d4902a04d99e8ccbfe7085e63155955fee397449d386453f6c452ae407b8743"
+                    },
+                    {
+                        "manifest":  "datasets/signed/tiny/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "tiny",
+                        "category":  "signed",
+                        "sample_id":  "signed_tiny_007",
+                        "path":  "datasets/signed/tiny/wscadminui.exe",
+                        "size_bytes":  9216,
+                        "sha256":  "270d3dfcddc982d7d0a2e1c760cf59d6e44c0815e4207fa80a419c1b10cd3029"
+                    },
+                    {
+                        "manifest":  "datasets/signed/small/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "small",
+                        "category":  "signed",
+                        "sample_id":  "signed_small_008",
+                        "path":  "datasets/signed/small/notepad.exe",
+                        "size_bytes":  200704,
+                        "sha256":  "da5807bb0997cc6b5132950ec87eda2b33b1ac4533cf1f7a22a6f3b576ed7c5b"
+                    },
+                    {
+                        "manifest":  "datasets/signed/small/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "small",
+                        "category":  "signed",
+                        "sample_id":  "signed_small_009",
+                        "path":  "datasets/signed/small/tasklist.exe",
+                        "size_bytes":  106496,
+                        "sha256":  "be7241a74fe9a9d30e0631e41533a362b21c8f7aae3e5b6ad319cc15c024ec3f"
+                    },
+                    {
+                        "manifest":  "datasets/signed/small/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "small",
+                        "category":  "signed",
+                        "sample_id":  "signed_small_010",
+                        "path":  "datasets/signed/small/net.exe",
+                        "size_bytes":  59904,
+                        "sha256":  "9f376759bcbcd705f726460fc4a7e2b07f310f52baa73caaaaa124fddbdf993e"
+                    },
+                    {
+                        "manifest":  "datasets/signed/small/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "small",
+                        "category":  "signed",
+                        "sample_id":  "signed_small_011",
+                        "path":  "datasets/signed/small/taskkill.exe",
+                        "size_bytes":  101376,
+                        "sha256":  "56f8cc2c1790c389394733b84c3fb55e10977e9f0fe0c08110ac11f0fe47f05e"
+                    },
+                    {
+                        "manifest":  "datasets/signed/small/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "small",
+                        "category":  "signed",
+                        "sample_id":  "signed_small_012",
+                        "path":  "datasets/signed/small/RuntimeBroker.exe",
+                        "size_bytes":  102864,
+                        "sha256":  "ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3"
+                    },
+                    {
+                        "manifest":  "datasets/signed/small/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "small",
+                        "category":  "signed",
+                        "sample_id":  "signed_small_013",
+                        "path":  "datasets/signed/small/cmd.exe",
+                        "size_bytes":  289792,
+                        "sha256":  "badf4752413cb0cbdc03fb95820ca167f0cdc63b597ccdb5ef43111180e088b0"
+                    },
+                    {
+                        "manifest":  "datasets/signed/medium/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "medium",
+                        "category":  "signed",
+                        "sample_id":  "signed_medium_014",
+                        "path":  "datasets/signed/medium/mspaint.exe",
+                        "size_bytes":  938496,
+                        "sha256":  "94f22ae686874a5f016aacf7f74f679decc8d52a39dfdf31dcd5133739bba532"
+                    },
+                    {
+                        "manifest":  "datasets/signed/medium/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "medium",
+                        "category":  "signed",
+                        "sample_id":  "signed_medium_015",
+                        "path":  "datasets/signed/medium/Narrator.exe",
+                        "size_bytes":  534016,
+                        "sha256":  "9e59eeeeb81f0fd09743c6f18b7884c6036de10940dc212c548725b6f6aacd7f"
+                    },
+                    {
+                        "manifest":  "datasets/signed/medium/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "medium",
+                        "category":  "signed",
+                        "sample_id":  "signed_medium_016",
+                        "path":  "datasets/signed/medium/systemreset.exe",
+                        "size_bytes":  522192,
+                        "sha256":  "fcbe89c12b5371f12f75fcda7dbafe393e57166c228e0bacd7cda6f7ba8a30d4"
+                    },
+                    {
+                        "manifest":  "datasets/signed/large/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "large",
+                        "category":  "signed",
+                        "sample_id":  "signed_large_017",
+                        "path":  "datasets/signed/large/smartscreen.exe",
+                        "size_bytes":  2380288,
+                        "sha256":  "3da437b642468eafab7cd1b9dcf2cdf838b44c63fd73dae8e3e4d06ec187c0f3"
+                    },
+                    {
+                        "manifest":  "datasets/signed/large/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "large",
+                        "category":  "signed",
+                        "sample_id":  "signed_large_018",
+                        "path":  "datasets/signed/large/WinSAT.exe",
+                        "size_bytes":  2811392,
+                        "sha256":  "09641422179f119438a963579956ee836188181a199436fcf0896592ba68ae3e"
+                    },
+                    {
+                        "manifest":  "datasets/signed/large/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "large",
+                        "category":  "signed",
+                        "sample_id":  "signed_large_019",
+                        "path":  "datasets/signed/large/explorer.exe",
+                        "size_bytes":  5370104,
+                        "sha256":  "b589316d943074d181a9e8eea323e193e14470c7d8815f6362d3ae7459427a91"
+                    },
+                    {
+                        "manifest":  "datasets/signed/large/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "large",
+                        "category":  "signed",
+                        "sample_id":  "signed_large_020",
+                        "path":  "datasets/signed/large/sppsvc.exe",
+                        "size_bytes":  4669216,
+                        "sha256":  "a944cb52ae27b183cd322c61ef8a9f09c3a505ec3ba66750c90ff4f4670be8ec"
+                    },
+                    {
+                        "manifest":  "datasets/signed/huge/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "huge",
+                        "category":  "signed",
+                        "sample_id":  "signed_huge_021",
+                        "path":  "datasets/signed/huge/ntoskrnl.exe",
+                        "size_bytes":  10859424,
+                        "sha256":  "563f486f45853248e54b3ee800d6b19289101c6cca15e0e3fa11a70452b5ce91"
+                    },
+                    {
+                        "manifest":  "datasets/signed/huge/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "huge",
+                        "category":  "signed",
+                        "sample_id":  "signed_huge_022",
+                        "path":  "datasets/signed/huge/OneDriveSetup.exe",
+                        "size_bytes":  30870320,
+                        "sha256":  "94273ec2daed031adb6a954e5e49b29e61042d26bfbe074af534ea743f54460c"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_001",
+                        "path":  "datasets/drivers/disk.sys",
+                        "size_bytes":  101856,
+                        "sha256":  "1029ebc39859fe68459214b2e35c970b92e7eb367e46fb536f46f26b2a5c8f8b"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_002",
+                        "path":  "datasets/drivers/kbdclass.sys",
+                        "size_bytes":  71480,
+                        "sha256":  "7639dcd4328c14f3fb522ec501f4df374ccbe87699eb4a2b238c9f9c526fdf59"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_003",
+                        "path":  "datasets/drivers/mouclass.sys",
+                        "size_bytes":  67600,
+                        "sha256":  "db5d99dbff8c84a7d87109dfb71396df8e0f0754fc0d263e45116915a39735ce"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_004",
+                        "path":  "datasets/drivers/acpi.sys",
+                        "size_bytes":  812416,
+                        "sha256":  "d59f30a362fc637719c52836792381ee8cb8846c112bc847c5cf7b3e5e4f23ee"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_005",
+                        "path":  "datasets/drivers/ndis.sys",
+                        "size_bytes":  1481600,
+                        "sha256":  "4f5b3d86b4b644ce5ce37732db5d057d60dbc0517545edae6746a1c6145ece0d"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_006",
+                        "path":  "datasets/drivers/tcpip.sys",
+                        "size_bytes":  2993536,
+                        "sha256":  "58033b62f5e6279437cf59bd6587b9cc5edaa6ae3bdc7d0e7436fe7f5cd254e7"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_007",
+                        "path":  "datasets/drivers/ntfs.sys",
+                        "size_bytes":  2846592,
+                        "sha256":  "4df3be53bc3048aed67dacfc3ea1be61c3d8fe2755669710c8ce604ce39884f1"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_008",
+                        "path":  "datasets/drivers/dxgkrnl.sys",
+                        "size_bytes":  3818368,
+                        "sha256":  "92fdbe53155635f0b9e3d507358880b33310be56c8d7564fa3fcbf90b2e40811"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_009",
+                        "path":  "datasets/drivers/fltmgr.sys",
+                        "size_bytes":  429968,
+                        "sha256":  "8de55c0b310894cd0086fe1f999c3e5b18b5d1473747b4a61db943bf4660dd94"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_010",
+                        "path":  "datasets/drivers/WdFilter.sys",
+                        "size_bytes":  350136,
+                        "sha256":  "0f4d31410401cc564a5d1fcef5ed2898dafb7418c1b39d746e88451cc3518aca"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_011",
+                        "path":  "datasets/drivers/WdBoot.sys",
+                        "size_bytes":  46688,
+                        "sha256":  "0845344f7bfaa94af90920a5346078e6261eea3a1a77795dda5b70b38609348b"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_012",
+                        "path":  "datasets/drivers/WdNisDrv.sys",
+                        "size_bytes":  54200,
+                        "sha256":  "67838896b7e04ebbe2aa089f09913789a5e8c4b7e7436397135f1f68bb86f03a"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_013",
+                        "path":  "datasets/drivers/fileinfo.sys",
+                        "size_bytes":  94736,
+                        "sha256":  "832bf32b9efa04fbdd9638d00b209dfc88c4c69e0aec7ff1b5ad4ddec0f20878"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_014",
+                        "path":  "datasets/drivers/cng.sys",
+                        "size_bytes":  747552,
+                        "sha256":  "1191e1cabfceb601f1c71d67f00c8194c718136f121e1c7efebe882b4a4b5887"
+                    },
+                    {
+                        "manifest":  "datasets/drivers/manifest.json",
+                        "signed":  true,
+                        "sub_category":  "windows_driver",
+                        "category":  "driver",
+                        "sample_id":  "driver_015",
+                        "path":  "datasets/drivers/storport.sys",
+                        "size_bytes":  726416,
+                        "sha256":  "8615e657d973311d7cf77996b80dc17d0cedce031afe1d2350f5214871b28b72"
+                    }
+                ],
+    "generated_on":  "2026-07-27T02:59:38Z",
+    "version":  "1.0",
+    "generator":  "DefenderAtlas Dataset Generator",
+    "total_samples":  51
+}

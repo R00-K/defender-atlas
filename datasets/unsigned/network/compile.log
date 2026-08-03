@@ -1,0 +1,53 @@
+﻿g++.exe : In file included from \\VBoxSvr\000\DefenderAtlas\datasets\unsigned\network\network_imports.cpp:2:
+At line:35 char:12
++     $out = & $gpp $c.Flags.Split(' ') -o $exeFile $srcFile 2>&1 | Out ...
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include..._imports.cpp:2::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:/ProgramData/mingw64/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h 
+before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x46): undefined reference to 
+`__imp_WSAStartup'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x97): undefined reference to 
+`__imp_gethostname'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x107): undefined reference to 
+`__imp_getaddrinfo'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x160): undefined reference to 
+`__imp_inet_ntop'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x189): undefined reference to 
+`__imp_freeaddrinfo'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x192): undefined reference to 
+`__imp_WSACleanup'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x1bf): undefined reference to 
+`GetAdaptersInfo'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x20d): undefined reference to 
+`GetAdaptersInfo'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x2c0): undefined reference to 
+`__imp_WinHttpOpen'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x2f3): undefined reference to 
+`__imp_WinHttpCloseHandle'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x30c): undefined reference to `__imp_socket'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x33f): undefined reference to 
+`__imp_closesocket'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x358): undefined reference to `__imp_socket'
+C:/ProgramData/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: 
+C:\Users\cruiz\AppData\Local\Temp\ccbgMb9c.o:network_imports.cpp:(.text+0x38b): undefined reference to 
+`__imp_closesocket'
+collect2.exe: error: ld returned 1 exit status
+

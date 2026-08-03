@@ -1,0 +1,63 @@
+﻿{
+    "dataset":  {
+                    "created_on":  "2026-07-27T02:57:48Z",
+                    "source_file":  "imports_many.cpp",
+                    "generated":  true,
+                    "created_by":  "DefenderAtlas Dataset Generator"
+                },
+    "sample_id":  "unsigned_imports_001",
+    "research":  {
+                     "rule_matches":  [
+
+                                      ],
+                     "analysis_report":  null,
+                     "confidence":  null,
+                     "phase_detection":  null,
+                     "findings":  [
+
+                                  ],
+                     "procmon_trace":  null,
+                     "notes":  "",
+                     "timeline":  null
+                 },
+    "type":  "native_pe",
+    "display_name":  "Many Windows API imports",
+    "category":  "unsigned",
+    "sub_category":  "imports",
+    "binary":  {
+                   "sha256":  "1c586bb355681d67f0f4bcac8aa8ceaf15e1c58492212e85454cecd3bd5cbda2",
+                   "compile_timestamp":  "2026-07-27T02:57:48Z",
+                   "pe_timestamp":  "",
+                   "architecture":  "x64",
+                   "size_bytes":  96605,
+                   "filename":  "imports_many.exe",
+                   "md5":  "ba71ed5aaedbd2cbda45b212035c6c3d"
+               },
+    "signed":  false,
+    "compiler":  {
+                     "flags":  "-O0 -static -lws2_32 -liphlpapi -lcrypt32 -lwintrust -lshell32 -ladvapi32 -lgdi32 -lwinhttp -lole32 -loleaut32 -lcomdlg32 -lwinmm",
+                     "language":  "C++",
+                     "name":  "MinGW GCC",
+                     "version":  "g++.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 15.2.0"
+                 },
+    "pe_features":  {
+                        "overlay":  false,
+                        "sections":  [
+                                         ".text",
+                                         ".data",
+                                         ".bss",
+                                         ".rdata",
+                                         ".rsrc"
+                                     ],
+                        "resources":  true,
+                        "certificate":  false,
+                        "exports":  [
+
+                                    ],
+                        "imports":  [
+                                        "kernel32.dll",
+                                        "msvcrt.dll"
+                                    ],
+                        "dotnet":  false
+                    }
+}

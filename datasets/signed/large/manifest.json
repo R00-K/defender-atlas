@@ -1,0 +1,110 @@
+﻿{
+    "sub_category":  "large",
+    "category":  "signed",
+    "samples":  [
+                    {
+                        "size_bytes":  2380288,
+                        "sample_id":  "signed_large_017",
+                        "filename":  "smartscreen.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.5848 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\smartscreen.exe",
+                        "sha256":  "3da437b642468eafab7cd1b9dcf2cdf838b44c63fd73dae8e3e4d06ec187c0f3",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "729b70c3f7099783cc0b2c26431cc866",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  2811392,
+                        "sample_id":  "signed_large_018",
+                        "filename":  "WinSAT.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\WinSAT.exe",
+                        "sha256":  "09641422179f119438a963579956ee836188181a199436fcf0896592ba68ae3e",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "ce04ab1d7cce6b62b6920751ee6e4656",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  5370104,
+                        "sample_id":  "signed_large_019",
+                        "filename":  "explorer.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.6159 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\SysWOW64\\explorer.exe",
+                        "sha256":  "b589316d943074d181a9e8eea323e193e14470c7d8815f6362d3ae7459427a91",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "b5f36e64e6231c654f2992258e45c96f",
+                        "product":  "Microsoft® Windows® Operating System"
+                    },
+                    {
+                        "size_bytes":  4669216,
+                        "sample_id":  "signed_large_020",
+                        "filename":  "sppsvc.exe",
+                        "signature_status":  "Valid",
+                        "version":  "10.0.19041.1 (WinBuild.160101.0800)",
+                        "original_path":  "C:\\Windows\\System32\\sppsvc.exe",
+                        "sha256":  "a944cb52ae27b183cd322c61ef8a9f09c3a505ec3ba66750c90ff4f4670be8ec",
+                        "company":  "Microsoft Corporation",
+                        "research":  {
+                                         "rule_matches":  [
+
+                                                          ],
+                                         "analysis_report":  null,
+                                         "confidence":  null,
+                                         "phase_detection":  null,
+                                         "findings":  [
+
+                                                      ],
+                                         "procmon_trace":  null,
+                                         "notes":  "",
+                                         "timeline":  null
+                                     },
+                        "md5":  "18de23ddede3b8f52f5431c487142dc1",
+                        "product":  "Microsoft® Windows® Operating System"
+                    }
+                ]
+}

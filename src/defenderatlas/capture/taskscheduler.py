@@ -230,10 +230,10 @@ def install_procmon_task(task_name: str, procmon_path: Path) -> bool:
         (stop_task_name(task_name), _launcher_dir() / _STOP_LAUNCHER_FILE),
         (export_task_name(task_name), _launcher_dir() / _EXPORT_LAUNCHER_FILE),
     )
-    for name, path in registrations:
-        if not _register_task(name, path):
-            return False
-    return True
+return all(
+    _register_task(name, path)
+    for name, path in registrations
+)
 
 
 def uninstall_procmon_task(task_name: str) -> bool:

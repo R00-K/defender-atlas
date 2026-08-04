@@ -1,0 +1,10 @@
+{
+    "experiment": 23,
+    "status": "completed",
+    "sample": "ipconfig.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

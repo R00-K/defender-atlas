@@ -55,9 +55,15 @@ _REQUIRED_HEADERS: frozenset[str] = frozenset(
 _OFFSET_RE = re.compile(r"Offset:\s*(0x\w+|\d[\d,]*)", re.IGNORECASE)
 _LENGTH_RE = re.compile(r"Length:\s*(0x\w+|\d[\d,]*)", re.IGNORECASE)
 
-# ProcMon timestamp format: HH:MM:SS.fffffff (7 digits, truncate to 6)
-_TIME_FMT = "%H:%M:%S.%f"
+# ProcMon timestamp format: HH:MM:SS.fffffff (7 digits, truncate to 6).
+# ProcMon's default CSV export uses a 12-hour clock with an AM/PM suffix
+# (e.g. "11:38:55.7784472 PM"), so the clock part is parsed as 12-hour
+# (%I) and the AM/PM marker is applied afterwards.
+_TIME_FMT = "%I:%M:%S.%f"
 _MAX_FRAC_DIGITS = 6
+
+_AM = "AM"
+_PM = "PM"
 
 
 # ── helpers ────────────────────────────────────────────────────────────
@@ -85,8 +91,11 @@ def _parse_hex_or_dec(value: str) -> int:
 def _parse_timestamp(raw: str, line_number: int) -> datetime:
     """Parse a ProcMon timestamp string into a datetime.
 
-    ProcMon exports 7-digit fractional seconds; we truncate to 6
-    (Python's ``%f`` limit).
+    ProcMon exports times on a 12-hour clock with an ``AM``/``PM``
+    suffix and 7-digit fractional seconds.  The suffix is stripped and
+    applied explicitly so that times are converted to 24-hour values
+    (e.g. ``11:38:55 PM`` -> ``23:38:55``); the fraction is truncated
+    to 6 digits (Python's ``%f`` limit).
 
     Raises
     ------
@@ -94,6 +103,14 @@ def _parse_timestamp(raw: str, line_number: int) -> datetime:
         If the string cannot be parsed.
     """
     cleaned = raw.strip()
+    # Handle the 12-hour AM/PM suffix explicitly so the hour is
+    # interpreted correctly (parsing with %I alone would treat 12:00 AM
+    # and 12:00 PM identically).
+    meridiem = ""
+    if cleaned.endswith(_AM) or cleaned.endswith(_PM):
+        meridiem = cleaned[-2:]
+        cleaned = cleaned[:-2].rstrip()
+
     # Handle 7+ digit fractional seconds by truncating to 6.
     dot_idx = cleaned.rfind(".")
     if dot_idx != -1:
@@ -102,13 +119,20 @@ def _parse_timestamp(raw: str, line_number: int) -> datetime:
             cleaned = cleaned[: dot_idx + 1] + frac[:_MAX_FRAC_DIGITS]
 
     try:
-        return datetime.strptime(cleaned, _TIME_FMT)
+        parsed = datetime.strptime(cleaned, _TIME_FMT)
     except ValueError as exc:
         raise TimestampParseError(
             line_number=line_number,
             raw=raw,
             reason=f"Cannot parse timestamp: {raw!r}",
         ) from exc
+
+    # Apply the 12-hour clock correction.
+    if meridiem == _PM and parsed.hour < 12:
+        parsed = parsed.replace(hour=parsed.hour + 12)
+    elif meridiem == _AM and parsed.hour == 12:
+        parsed = parsed.replace(hour=0)
+    return parsed
 
 
 def _parse_detail(detail: str, line_number: int) -> tuple[int, int]:

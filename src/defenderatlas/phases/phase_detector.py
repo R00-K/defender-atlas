@@ -241,9 +241,7 @@ def _collect_entries(
     and ``Phase`` construction without changing any public API.
     """
     return [
-        e
-        for e in entries
-        if e.region_name in relevant and e.timestamp not in claimed
+        e for e in entries if e.region_name in relevant and e.timestamp not in claimed
     ]
 
 
@@ -323,9 +321,7 @@ class PhaseDetector:
 
         for rule in self._rules:
             relevant = rule.required_regions | set(rule.optional_regions)
-            collected = _collect_entries(
-                timeline.entries, relevant, matched_timestamps
-            )
+            collected = _collect_entries(timeline.entries, relevant, matched_timestamps)
 
             phase = _check_segment(rule, collected)
             if phase is not None:

@@ -1,0 +1,14 @@
+{
+    "experiment_id": 19,
+    "sample": "tasklist.exe",
+    "relative_path": "signed/small/tasklist.exe",
+    "sha256": "be7241a74fe9a9d30e0631e41533a362b21c8f7aae3e5b6ad319cc15c024ec3f",
+    "size": 106496,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:53:55+00:00",
+    "result": "success"
+}

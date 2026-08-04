@@ -1,0 +1,10 @@
+{
+    "experiment": 11,
+    "status": "completed",
+    "sample": "Narrator.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

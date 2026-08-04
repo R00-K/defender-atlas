@@ -1,0 +1,10 @@
+{
+    "experiment": 1,
+    "status": "completed",
+    "sample": "OneDriveSetup.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

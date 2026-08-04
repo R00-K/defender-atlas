@@ -1,0 +1,8 @@
+{
+    "trigger": "attachment",
+    "source_url": "https://example.com/download",
+    "working_copy": "arrays_large.exe",
+    "completion_strategy": "timeout",
+    "procmon_profile": "minimal",
+    "collector_version": "1.0"
+}

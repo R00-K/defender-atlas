@@ -1,0 +1,10 @@
+{
+    "experiment": 5,
+    "status": "completed",
+    "sample": "sublime_mod2.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

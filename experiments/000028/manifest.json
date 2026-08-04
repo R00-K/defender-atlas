@@ -1,0 +1,10 @@
+{
+    "experiment": 28,
+    "status": "completed",
+    "sample": "data_embedded.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

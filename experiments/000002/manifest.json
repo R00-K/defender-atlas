@@ -1,0 +1,10 @@
+{
+    "experiment": 2,
+    "status": "completed",
+    "sample": "ntoskrnl.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

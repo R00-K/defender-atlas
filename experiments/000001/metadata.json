@@ -1,0 +1,14 @@
+{
+    "experiment_id": 1,
+    "sample": "OneDriveSetup.exe",
+    "relative_path": "signed/huge/OneDriveSetup.exe",
+    "sha256": "94273ec2daed031adb6a954e5e49b29e61042d26bfbe074af534ea743f54460c",
+    "size": 30870320,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:39:17+00:00",
+    "result": "success"
+}

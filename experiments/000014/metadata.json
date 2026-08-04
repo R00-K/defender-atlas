@@ -1,0 +1,14 @@
+{
+    "experiment_id": 14,
+    "sample": "RuntimeBroker.exe",
+    "relative_path": "signed/small/RuntimeBroker.exe",
+    "sha256": "ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3",
+    "size": 102864,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:50:19+00:00",
+    "result": "success"
+}

@@ -1,0 +1,10 @@
+{
+    "experiment": 15,
+    "status": "completed",
+    "sample": "cmd.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "experiment_id": 27,
+    "sample": "arrays_large.exe",
+    "relative_path": "unsigned/arrays/arrays_large.exe",
+    "sha256": "ea5b6dec2fdbec31ab3428b7f80fe73fce1fad16708d51d73defd9c68d3ed5d0",
+    "size": 88020,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "unsigned",
+    "timestamp": "2026-08-04T06:59:44+00:00",
+    "result": "success"
+}

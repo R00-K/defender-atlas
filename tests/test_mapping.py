@@ -490,6 +490,43 @@ class TestOverlappingReads:
         assert ".text" in names
         assert len(results[0].matched_regions) == 1
 
+    def test_read_inside_long_section_with_nested_regions(self) -> None:
+        # A long section can start early and extend far past regions that
+        # nest inside it (e.g. .text with the TLS/Debug directories).  A
+        # read inside the section but outside those nested regions must
+        # still match the section; a scan that stops at the first
+        # non-overlapping nested region would miss it.
+        from defenderatlas.mapping.pe_mapper import _find_overlapping_regions
+
+        regions = [
+            PERegion(
+                name=".text",
+                start_offset=1024,
+                end_offset=3_638_783,
+                description="test",
+            ),
+            PERegion(
+                name="TLS Directory",
+                start_offset=92_504,
+                end_offset=92_527,
+                description="test",
+            ),
+            PERegion(
+                name="Debug Directory",
+                start_offset=238_544,
+                end_offset=238_627,
+                description="test",
+            ),
+        ]
+        sorted_regions = sorted(regions, key=lambda r: r.start_offset)
+        starts = [r.start_offset for r in sorted_regions]
+
+        matches = _find_overlapping_regions(524_288, 4096, sorted_regions, starts)
+        names = [r.name for r in matches]
+        assert ".text" in names
+        assert "TLS Directory" not in names
+        assert "Debug Directory" not in names
+
 
 # ===========================================================================
 # map_events — multiple events
@@ -541,8 +578,8 @@ class TestOverlay:
         from unittest.mock import MagicMock
 
         pe = MagicMock()
-        pe.OVERLAY_START = 0x400
-        pe.OVERLAY_SIZE = 128
+        pe.get_overlay_data_start_offset.return_value = 0x400
+        pe.__data__ = b"\x00" * (0x400 + 128)
         region = _build_overlay_region(pe)
         assert region is not None
         assert region.name == OVERLAY
@@ -553,7 +590,7 @@ class TestOverlay:
         from unittest.mock import MagicMock
 
         pe = MagicMock()
-        pe.OVERLAY_START = None
+        pe.get_overlay_data_start_offset.return_value = None
         region = _build_overlay_region(pe)
         assert region is None
 
@@ -561,8 +598,8 @@ class TestOverlay:
         from unittest.mock import MagicMock
 
         pe = MagicMock()
-        pe.OVERLAY_START = 0x400
-        pe.OVERLAY_SIZE = 0
+        pe.get_overlay_data_start_offset.return_value = 0x400
+        pe.__data__ = b"\x00" * 0x400
         region = _build_overlay_region(pe)
         assert region is None
 

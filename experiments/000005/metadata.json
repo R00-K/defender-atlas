@@ -1,0 +1,14 @@
+{
+    "experiment_id": 5,
+    "sample": "sublime_mod2.exe",
+    "relative_path": "signed/huge/sublime/sublime_mod2.exe",
+    "sha256": "8ec210a55a26eb060b97a2f5b8e3a952ea5217b671a7eba97c447c03938ef4d8",
+    "size": 16200132,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:43:20+00:00",
+    "result": "success"
+}

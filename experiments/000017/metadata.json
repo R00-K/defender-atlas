@@ -1,0 +1,14 @@
+{
+    "experiment_id": 17,
+    "sample": "notepad.exe",
+    "relative_path": "signed/small/notepad.exe",
+    "sha256": "da5807bb0997cc6b5132950ec87eda2b33b1ac4533cf1f7a22a6f3b576ed7c5b",
+    "size": 200704,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:52:29+00:00",
+    "result": "success"
+}

@@ -120,10 +120,13 @@ def _build_overlay_region(pe: pefile.PE) -> PERegion | None:
     The overlay starts after the last section's raw data and extends
     to the end of the file.
     """
-    if not hasattr(pe, "OVERLAY_START") or pe.OVERLAY_START is None:
+    overlay_start = pe.get_overlay_data_start_offset()
+    if overlay_start is None:
         return None
-    overlay_start = pe.OVERLAY_START
-    overlay_size = pe.OVERLAY_SIZE if hasattr(pe, "OVERLAY_SIZE") else 0
+    # pefile exposes the raw file bytes only via the private ``__data__``
+    # attribute; there is no public accessor in this version.
+    file_size = len(pe.__data__)
+    overlay_size = file_size - overlay_start
     if overlay_size <= 0:
         return None
     return PERegion(
@@ -302,11 +305,11 @@ def _build_directory_regions(
     _dir_names: dict[int, tuple[str, str]] = {
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_EXPORT"]: (
             EXPORT_DIR,
-            "Export directory: function names and ordinals " "exported by the DLL.",
+            "Export directory: function names and ordinals exported by the DLL.",
         ),
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_IMPORT"]: (
             IMPORT_DIR,
-            "Import directory: DLLs and functions imported by " "this PE.",
+            "Import directory: DLLs and functions imported by this PE.",
         ),
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_RESOURCE"]: (
             RESOURCE_DIR,
@@ -325,7 +328,7 @@ def _build_directory_regions(
         ),
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_DEBUG"]: (
             DEBUG_DIR,
-            "Debug directory: CodeView PDB paths, " "timestamps, and type info.",
+            "Debug directory: CodeView PDB paths, timestamps, and type info.",
         ),
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT"]: (
             BOUND_IMPORT_DIR,
@@ -334,15 +337,15 @@ def _build_directory_regions(
         ),
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT"]: (
             DELAY_IMPORT_DIR,
-            "Delay-load import directory: DLLs loaded on " "first function call.",
+            "Delay-load import directory: DLLs loaded on first function call.",
         ),
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_IAT"]: (
             IAT_DIR,
-            "Import Address Table: resolved function pointers " "filled at load time.",
+            "Import Address Table: resolved function pointers filled at load time.",
         ),
         pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR"]: (
             COM_DESCRIPTOR_DIR,
-            ".NET COM descriptor (CLR header): metadata " "for managed assemblies.",
+            ".NET COM descriptor (CLR header): metadata for managed assemblies.",
         ),
     }
 
@@ -449,32 +452,19 @@ def _find_overlapping_regions(
     """
     read_end = offset + length - 1
 
-    # Find the first region whose start_offset <= read_end.
-    # bisect_right gives us the insertion point; we step back one.
+    # Every overlapping region must start at or before ``read_end``, so
+    # the candidate set is a prefix of the start-sorted region list.
+    # A region's end_offset is NOT monotonic in start_offset (a long
+    # section can start early and extend far past later regions), so the
+    # scan cannot break out early and must check every candidate.
     idx = bisect.bisect_right(starts, read_end) - 1
 
     matches: list[PERegion] = []
     while idx >= 0:
         region = sorted_regions[idx]
-        if region.start_offset > read_end:
-            break
         if region.overlaps(offset, length):
             matches.append(region)
-        # Regions are sorted by start_offset; once start_offset < offset
-        # and the region doesn't overlap, earlier ones won't either.
-        if region.end_offset < offset:
-            break
         idx -= 1
-
-    # Also check regions that start *after* our offset but before read_end.
-    idx = bisect.bisect_left(starts, offset)
-    while idx < len(sorted_regions):
-        region = sorted_regions[idx]
-        if region.start_offset > read_end:
-            break
-        if region.overlaps(offset, length) and region not in matches:
-            matches.append(region)
-        idx += 1
 
     # Maintain sorted order by start_offset.
     matches.sort(key=lambda r: r.start_offset)

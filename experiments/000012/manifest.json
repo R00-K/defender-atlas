@@ -1,0 +1,10 @@
+{
+    "experiment": 12,
+    "status": "completed",
+    "sample": "mspaint.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

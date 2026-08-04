@@ -1,0 +1,14 @@
+{
+    "experiment_id": 16,
+    "sample": "net.exe",
+    "relative_path": "signed/small/net.exe",
+    "sha256": "9f376759bcbcd705f726460fc4a7e2b07f310f52baa73caaaaa124fddbdf993e",
+    "size": 59904,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:51:46+00:00",
+    "result": "success"
+}

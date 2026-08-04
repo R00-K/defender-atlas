@@ -1,0 +1,14 @@
+{
+    "experiment_id": 30,
+    "sample": "functions_many.exe",
+    "relative_path": "unsigned/functions/functions_many.exe",
+    "sha256": "a44d4e96becbdad01866bd08d7c9636eda7cfe425b48eb90a4f5419815ffad79",
+    "size": 98330,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "unsigned",
+    "timestamp": "2026-08-04T07:02:13+00:00",
+    "result": "success"
+}

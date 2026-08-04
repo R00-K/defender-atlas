@@ -1,0 +1,14 @@
+{
+    "experiment_id": 10,
+    "sample": "sppsvc.exe",
+    "relative_path": "signed/large/sppsvc.exe",
+    "sha256": "a944cb52ae27b183cd322c61ef8a9f09c3a505ec3ba66750c90ff4f4670be8ec",
+    "size": 4669216,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:47:22+00:00",
+    "result": "success"
+}

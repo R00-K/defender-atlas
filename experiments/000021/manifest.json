@@ -1,0 +1,10 @@
+{
+    "experiment": 21,
+    "status": "completed",
+    "sample": "fc.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

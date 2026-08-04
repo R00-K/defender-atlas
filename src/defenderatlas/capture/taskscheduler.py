@@ -146,8 +146,7 @@ def _write_launcher(procmon_path: Path) -> Path | None:
         'set "PML="',
         'if exist "%PML_FILE%" set /p PML=<"%PML_FILE%"',
         "if not defined PML exit /b 1",
-        f'start /wait "" "{exe}" /AcceptEula /Quiet /Minimized '
-        '/BackingFile "%PML%"',
+        f'start /wait "" "{exe}" /AcceptEula /Quiet /Minimized /BackingFile "%PML%"',
     ]
 
     stop = directory / _STOP_LAUNCHER_FILE
@@ -167,8 +166,7 @@ def _write_launcher(procmon_path: Path) -> Path | None:
         'if not defined CSV set "CSV=%%L"',
         "if not defined PML exit /b 1",
         "if not defined CSV exit /b 1",
-        f'start /wait "" "{exe}" /AcceptEula /OpenLog "%PML%" '
-        '/SaveAs "%CSV%"',
+        f'start /wait "" "{exe}" /AcceptEula /OpenLog "%PML%" /SaveAs "%CSV%"',
     ]
 
     try:
@@ -230,20 +228,21 @@ def install_procmon_task(task_name: str, procmon_path: Path) -> bool:
         (stop_task_name(task_name), _launcher_dir() / _STOP_LAUNCHER_FILE),
         (export_task_name(task_name), _launcher_dir() / _EXPORT_LAUNCHER_FILE),
     )
-return all(
-    _register_task(name, path)
-    for name, path in registrations
-)
+    return all(_register_task(name, path) for name, path in registrations)
 
 
 def uninstall_procmon_task(task_name: str) -> bool:
     """Remove the scheduled tasks used to run ProcMon."""
     names = (task_name, stop_task_name(task_name), export_task_name(task_name))
-    command = "$ErrorActionPreference = 'Stop'; " + "".join(
-        "Unregister-ScheduledTask -TaskName "
-        f"{_ps_quote(name)} -Confirm:$false -ErrorAction SilentlyContinue; "
-        for name in names
-    ) + "Write-Output 'DONE'"
+    command = (
+        "$ErrorActionPreference = 'Stop'; "
+        + "".join(
+            "Unregister-ScheduledTask -TaskName "
+            f"{_ps_quote(name)} -Confirm:$false -ErrorAction SilentlyContinue; "
+            for name in names
+        )
+        + "Write-Output 'DONE'"
+    )
     result = _run_ps(command)
     if result is None:
         return False

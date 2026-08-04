@@ -1,0 +1,14 @@
+{
+    "experiment_id": 15,
+    "sample": "cmd.exe",
+    "relative_path": "signed/small/cmd.exe",
+    "sha256": "badf4752413cb0cbdc03fb95820ca167f0cdc63b597ccdb5ef43111180e088b0",
+    "size": 289792,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:51:03+00:00",
+    "result": "success"
+}

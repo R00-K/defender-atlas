@@ -1,0 +1,14 @@
+{
+    "experiment_id": 28,
+    "sample": "data_embedded.exe",
+    "relative_path": "unsigned/data/data_embedded.exe",
+    "sha256": "ee764ed810590d8c5a900b2ddd88261563ece7408cbbc589869936b484651226",
+    "size": 88088,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "unsigned",
+    "timestamp": "2026-08-04T07:00:32+00:00",
+    "result": "success"
+}

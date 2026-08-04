@@ -1,0 +1,14 @@
+{
+    "experiment_id": 26,
+    "sample": "wscadminui.exe",
+    "relative_path": "signed/tiny/wscadminui.exe",
+    "sha256": "270d3dfcddc982d7d0a2e1c760cf59d6e44c0815e4207fa80a419c1b10cd3029",
+    "size": 9216,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:59:01+00:00",
+    "result": "success"
+}

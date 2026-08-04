@@ -1,0 +1,10 @@
+{
+    "experiment": 14,
+    "status": "completed",
+    "sample": "RuntimeBroker.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "experiment_id": 8,
+    "sample": "explorer.exe",
+    "relative_path": "signed/large/explorer.exe",
+    "sha256": "b589316d943074d181a9e8eea323e193e14470c7d8815f6362d3ae7459427a91",
+    "size": 5370104,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:45:56+00:00",
+    "result": "success"
+}

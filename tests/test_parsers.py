@@ -62,17 +62,15 @@ _BAD_PID_ROW = (
 )
 
 _MISSING_OFFSET_DETAIL = (
-    "10:30:45.1234567,MsMpEng.exe,1234,ReadFile,"
-    'C:\\test.dll,SUCCESS,"Length: 0x100"\n'
+    '10:30:45.1234567,MsMpEng.exe,1234,ReadFile,C:\\test.dll,SUCCESS,"Length: 0x100"\n'
 )
 
 _MISSING_LENGTH_DETAIL = (
-    "10:30:45.1234567,MsMpEng.exe,1234,ReadFile," 'C:\\test.dll,SUCCESS,"Offset: 0x0"\n'
+    '10:30:45.1234567,MsMpEng.exe,1234,ReadFile,C:\\test.dll,SUCCESS,"Offset: 0x0"\n'
 )
 
 _EMPTY_PATH_ROW = (
-    "10:30:45.1234567,MsMpEng.exe,1234,ReadFile,,SUCCESS,"
-    '"Offset: 0x0, Length: 0x100"\n'
+    '10:30:45.1234567,MsMpEng.exe,1234,ReadFile,,SUCCESS,"Offset: 0x0, Length: 0x100"\n'
 )
 
 
@@ -118,6 +116,30 @@ class TestParseTimestamp:
     def test_invalid_timestamp_raises(self) -> None:
         with pytest.raises(TimestampParseError, match="Cannot parse"):
             _parse_timestamp("not-a-time", 1)
+
+    def test_pm_suffix_shifts_hour(self) -> None:
+        ts = _parse_timestamp("11:38:55.7784472 PM", 1)
+        assert ts.hour == 23
+        assert ts.minute == 38
+        assert ts.second == 55
+
+    def test_am_suffix_no_shift(self) -> None:
+        ts = _parse_timestamp("11:38:55.7784472 AM", 1)
+        assert ts.hour == 11
+
+    def test_am_suffix_midnight(self) -> None:
+        ts = _parse_timestamp("12:00:08.2222162 AM", 1)
+        assert ts.hour == 0
+        assert ts.minute == 0
+
+    def test_pm_suffix_noon(self) -> None:
+        ts = _parse_timestamp("12:00:08.2222162 PM", 1)
+        assert ts.hour == 12
+
+    def test_am_pm_ordering_correct(self) -> None:
+        am = _parse_timestamp("11:59:59.0000001 AM", 1)
+        pm = _parse_timestamp("12:00:00.0000001 PM", 1)
+        assert am < pm
 
     def test_error_contains_line_number(self) -> None:
         with pytest.raises(TimestampParseError) as exc_info:

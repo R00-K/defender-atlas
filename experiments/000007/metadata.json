@@ -1,0 +1,14 @@
+{
+    "experiment_id": 7,
+    "sample": "WinSAT.exe",
+    "relative_path": "signed/large/WinSAT.exe",
+    "sha256": "09641422179f119438a963579956ee836188181a199436fcf0896592ba68ae3e",
+    "size": 2811392,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:45:13+00:00",
+    "result": "success"
+}

@@ -1,0 +1,10 @@
+{
+    "experiment": 29,
+    "status": "completed",
+    "sample": "fileio_basic.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

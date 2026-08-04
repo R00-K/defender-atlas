@@ -1,0 +1,14 @@
+{
+    "experiment_id": 22,
+    "sample": "find.exe",
+    "relative_path": "signed/tiny/find.exe",
+    "sha256": "da020fbf74e1a08a5c21955a09b28ec62a6d160af648f6903ada401725a652b0",
+    "size": 17920,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:56:05+00:00",
+    "result": "success"
+}

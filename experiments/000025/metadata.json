@@ -1,0 +1,14 @@
+{
+    "experiment_id": 25,
+    "sample": "whoami.exe",
+    "relative_path": "signed/tiny/whoami.exe",
+    "sha256": "1d4902a04d99e8ccbfe7085e63155955fee397449d386453f6c452ae407b8743",
+    "size": 73728,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:58:19+00:00",
+    "result": "success"
+}

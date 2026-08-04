@@ -1,0 +1,14 @@
+{
+    "experiment_id": 24,
+    "sample": "ping.exe",
+    "relative_path": "signed/tiny/ping.exe",
+    "sha256": "7af50fa112932ea3284f7821b2eea2b7582f558dba897231bb82182003c29f8b",
+    "size": 22528,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:57:35+00:00",
+    "result": "success"
+}

@@ -1,0 +1,14 @@
+{
+    "experiment_id": 11,
+    "sample": "Narrator.exe",
+    "relative_path": "signed/medium/Narrator.exe",
+    "sha256": "9e59eeeeb81f0fd09743c6f18b7884c6036de10940dc212c548725b6f6aacd7f",
+    "size": 534016,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:48:08+00:00",
+    "result": "success"
+}

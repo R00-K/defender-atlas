@@ -1,0 +1,10 @@
+{
+    "experiment": 22,
+    "status": "completed",
+    "sample": "find.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

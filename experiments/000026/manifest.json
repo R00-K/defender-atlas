@@ -1,0 +1,10 @@
+{
+    "experiment": 26,
+    "status": "completed",
+    "sample": "wscadminui.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "experiment_id": 23,
+    "sample": "ipconfig.exe",
+    "relative_path": "signed/tiny/ipconfig.exe",
+    "sha256": "53e000f5aa9b3a00934319db8080bb99cb323bf48fc628a64f75d7847c265606",
+    "size": 35840,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:56:52+00:00",
+    "result": "success"
+}

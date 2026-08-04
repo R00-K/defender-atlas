@@ -1,0 +1,14 @@
+{
+    "experiment_id": 29,
+    "sample": "fileio_basic.exe",
+    "relative_path": "unsigned/fileio/fileio_basic.exe",
+    "sha256": "5c7392544eda42b19835f30828978376583ca954ef8b58d3f6f5f2fed1163bb3",
+    "size": 61084,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "unsigned",
+    "timestamp": "2026-08-04T07:01:15+00:00",
+    "result": "success"
+}

@@ -1,0 +1,14 @@
+{
+    "experiment_id": 2,
+    "sample": "ntoskrnl.exe",
+    "relative_path": "signed/huge/ntoskrnl.exe",
+    "sha256": "563f486f45853248e54b3ee800d6b19289101c6cca15e0e3fa11a70452b5ce91",
+    "size": 10859424,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:40:01+00:00",
+    "result": "success"
+}

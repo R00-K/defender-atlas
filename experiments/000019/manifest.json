@@ -1,0 +1,10 @@
+{
+    "experiment": 19,
+    "status": "completed",
+    "sample": "tasklist.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "experiment_id": 9,
+    "sample": "smartscreen.exe",
+    "relative_path": "signed/large/smartscreen.exe",
+    "sha256": "3da437b642468eafab7cd1b9dcf2cdf838b44c63fd73dae8e3e4d06ec187c0f3",
+    "size": 2380288,
+    "trigger": "attachment",
+    "completion_strategy": "timeout",
+    "collector_version": "1.0",
+    "procmon_profile": "minimal",
+    "category": "signed",
+    "timestamp": "2026-08-04T06:46:38+00:00",
+    "result": "success"
+}

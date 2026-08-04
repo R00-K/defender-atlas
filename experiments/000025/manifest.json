@@ -1,0 +1,10 @@
+{
+    "experiment": 25,
+    "status": "completed",
+    "sample": "whoami.exe",
+    "capture": {
+        "pml": "capture.pml",
+        "csv": "capture.csv",
+        "filtered": "filtered.csv"
+    }
+}
